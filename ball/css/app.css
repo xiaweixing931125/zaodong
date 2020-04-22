@@ -1,0 +1,31 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.ball-btn{
+	width: 20vw;
+	height: 5vw;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	position: absolute;
+	left: 40vw;
+	top: 0;
+	text-align: center;
+	line-height: 5vw;
+	transform: scale(1);
+	transform-origin: 50% 50%;
+	transition: scale 0.5s;
+}
+
+.ball{
+	width: 6vw;
+	height: 6vw;
+	position: absolute;
+	left:47vw;
+	bottom: 0;
+	border-radius: 50%;
+	background-color: aqua;
+}
