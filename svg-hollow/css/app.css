@@ -1,0 +1,152 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.btn-box{
+	width: 100vw;
+	height: 10vh;
+	position: fixed;
+	left: 0vw;
+	bottom: 3vh;
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn1,.btn2,.btn3,.btn4{
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	font-size: 2vw;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	line-height: 10vh;
+}
+
+/* svg */
+.svgBox{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.svgBox2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+#svgTextPath{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.video-box{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: white;
+}
+
+.video-box video{
+  object-fit:fill;
+}
+
+.svg{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mask-rect{
+  fill:rgb(240,240,240);
+}
+
+.mask-text{
+  font-size: 100px;
+  font-weight: 900;
+  text-anchor:middle;
+  dominant-baseline:baseline;
+  fill:black;
+}
+
+.svg-rect{
+  fill:white;
+  mask:url(#mask);
+}
+
+/* css1 */
+
+
+.cssBox1{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(../img/baby.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	background-size: 100% 100%;
+	font-size: 20vw;
+	font-weight: 900;
+	text-align: center;
+	line-height: 100vh;
+	display: none;
+} 
+
+/* css2 */
+.cssBox2{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(../img/baby1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-size: 20vw;
+	font-weight: 900;
+	text-align: center;
+	line-height: 100vh;
+	display: none;
+	/* background-blend-mode: multiply; */
+}
+
+.css2React{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #FFFFFF;
+	opacity: 0.6;
+}
+
+.cssBox2Text{
+	mix-blend-mode: overlay;
+}
