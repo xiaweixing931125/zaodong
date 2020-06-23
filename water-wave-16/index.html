@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>水面波纹动起来</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<svg width="100%" height="100%" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid meet">
+					<filter id="wave" x="0" y="0" width="100%" height="100%">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="50" />
+						<feTurbulence type="fractalNoise" baseFrequency="0.05 0.8" numOctaves="3" result="turbulence">
+							<animate attributeName="baseFrequency" dur="60s" calcMode="linear" values="0.05 0.8;0.07 0.6;0.06 0.5" keyTimes="0;0.5;1"
+							 repeatCount="indefinite" />
+						</feTurbulence>
+						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence" scale="40">
+						</feDisplacementMap>
+					</filter>
+					<image xlink:href="img/moon.jpg" id='image' x='300' y='0' width='600' height='400' preserveAspectRatio="xMidYMid meet"></image>
+					<use xlink:href="#image" filter='url(#wave)' transform='translate(0,800) scale(1 -1)' ></use>
+			</svg>
+			
+		</div>
+	</body>
+</html>
