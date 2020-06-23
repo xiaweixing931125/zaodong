@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>旋转的筛子</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="vertical rotateX">
+				<div class="horizontal rotateY">
+					<div class="box">
+						<div class="face one front">
+							<span class="dot"></span>
+						</div>
+						<div class="face two back">
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+						<div class="face three up">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</div>
+						<div class="face four down">
+							<div class="dot-box">
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+							<div class="dot-box">
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+						<div class="face five left">
+							<div class="dot-box">
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+							<div class="dot-box">
+								<span class="dot"></span>
+							</div>
+							<div class="dot-box">
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+						<div class="face six right">
+							<div class="dot-box">
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+							<div class="dot-box">
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+						<div class="react x"></div>
+						<div class="react y"></div>
+						<div class="react z"></div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-text">点击下方框框切换转圈圈方式</div>
+			<div class="btn" onclick="changeType()">自动转圈圈</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/app.js"></script>
+</html>
