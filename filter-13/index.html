@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>svg滤镜</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+				<defs >
+				<!-- <filter id="filterNormal" x='0%' y='0%' width='100%' height='80%'>
+					<feImage xlink:href="img/baby.jpg" x='0' y='00' width='300' height='300' preserveAspectRatio="xMidYMid meet"></feImage>
+				</filter> -->
+				
+				<filter id="blendMultiply1">
+					<feFlood result='floodFill' flood-color='green' flood-opacity='1'></feFlood>
+					<feBlend in='SourceGraphic' in2='floodFill' mode = 'darken'></feBlend>
+				</filter>
+				<filter id="blendMultiply2">
+					<feFlood result='floodFill' flood-color='green' flood-opacity='1'></feFlood>
+					<feBlend in='SourceGraphic' in2='floodFill' mode = 'lighten'></feBlend>
+				</filter>
+				<filter id="blendMultiply3">
+					<feFlood result='floodFill' flood-color='green' flood-opacity='1'></feFlood>
+					<feBlend in='SourceGraphic' in2='floodFill' mode = 'screen'></feBlend>
+				</filter>
+				<filter id="blendMultiply4">
+					<feFlood result='floodFill' flood-color='green' flood-opacity='1'></feFlood>
+					<feBlend in='SourceGraphic' in2='floodFill' mode = 'multiply'></feBlend>
+				</filter>
+				<filter id="blendMultiply5">
+					<feFlood result='floodFill' flood-color='green' flood-opacity='1'></feFlood>
+					<feBlend in='SourceGraphic' in2='floodFill' mode = 'normal'></feBlend>
+				</filter>
+				<image xlink:href="img/baby2.jpg" id='image' x='0' y='0' width='300' height='300' preserveAspectRatio="xMidYMid meet"></image>
+				</defs>
+				<use xlink:href="#image" filter='url(#blendMultiply1)' transform='translate(0,0)' ></use>
+				<use xlink:href="#image" filter='url(#blendMultiply2)' transform='translate(300,0)' ></use>
+				<use xlink:href="#image" filter='url(#blendMultiply3)' transform='translate(0,300)' ></use>
+				<use xlink:href="#image" filter='url(#blendMultiply4)' transform='translate(300,300)' ></use>
+				<use xlink:href="#image" filter='url(#blendMultiply5)' transform='translate(800,150)' ></use>
+				
+				<!-- <rect x='50' y='50' width='300' height='300' fill='skyblue'></rect>
+				<rect x='50' y='50' width='300' height='300' filter='url(#filterNormal)'></rect> -->
+			</svg>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/app.js"></script>
+</html>
