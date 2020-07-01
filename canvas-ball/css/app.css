@@ -47,6 +47,6 @@ body,html{
 	left: 50%;
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	font-size: 12vw;
-	line-height: 12vw;
+	font-size: 130px;
+	line-height: 600px;
 }
