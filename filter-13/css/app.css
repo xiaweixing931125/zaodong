@@ -14,3 +14,27 @@ body,html{
 	overflow: hidden;
 }
 
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.swiper-wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.swiper-slide{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* position: absolute;
+	left: 0;
+	top: 0; */
+}

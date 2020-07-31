@@ -1,1 +1,3 @@
-console.log("开始了");
+var swiper = new Swiper('.swiper-container', {
+     direction : 'vertical',
+    });
