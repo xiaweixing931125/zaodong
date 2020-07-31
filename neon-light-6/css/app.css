@@ -1,0 +1,239 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: orange;
+	font-size: 100px;
+}
+
+@font-face {
+	font-family:aaa;
+	src: url(aaa.ttf);
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000000;
+}
+
+.box{
+	width: 50vw;
+	height: 30vw;
+	position: absolute;
+	left: 25vw;
+	top: calc(50vh - 15vw);
+	border-radius: .2rem;
+	background-color: gray;
+}
+
+.switch-box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+}
+
+.text{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	text-align: center;
+	font-size: 1rem;
+	font-family: aaa;
+	animation:
+	neon-off 1s .5s both,
+	neon-off-color 1.5s .5s ease-out backwards;
+}
+
+@keyframes neonBlingBling{
+	from{
+		text-shadow:
+		0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #ff5722,
+		0 0 70px #ff5722,
+		0 0 80px #ff5722,
+		0 0 100px #ff5722,
+		0 0 150px #ff5722;
+	}
+	to{
+		text-shadow:
+		0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 15px #fff,
+		0 0 20px #ff5722,
+		0 0 35px #ff5722,
+		0 0 40px #ff5722,
+		0 0 50px #ff5722,
+		0 0 75px #ff5722;
+	}
+}
+
+@keyframes neonBlingBling1{
+	from{
+		text-shadow: none;
+	}
+	to{
+		text-shadow:
+		0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #ff5722,
+		0 0 70px #ff5722,
+		0 0 80px #ff5722,
+		0 0 100px #ff5722,
+		0 0 150px #ff5722;
+	}
+}
+
+input{
+	display: none;
+}
+
+.switch{
+	width: 4em;
+	height: 1.6em;
+	display: block;
+	border-radius: 2em;
+	font-size: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	border: 0.04em solid silver;
+	background-color: gray;
+	background-position: center,-3.2em;
+	margin-left: calc(25vw - 2em);
+	margin-top: 5vw;
+}
+
+.switch::before{
+	content: '';
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	position: absolute;
+	left: 1%;
+	top: calc(50% - 0.75em);
+	background-color: #ffffff;
+}
+
+.switch{
+	box-shadow: 
+	1px 1px 2px #211 inset,
+	2px 2px 4px #322 inset,
+	3px 3px 6px #544 inset;
+}
+
+.switch::before{
+	box-shadow:
+	1px 1px 1px #555,
+	2px 2px 1px #444,
+	3px 3px 1px #333,
+	5px 5px 10px #000;
+	background-image:
+	 radial-gradient(
+	   ellipse 8% 50% at 50% 0%,
+	   hsla(0,0%,100%,.5) 0%,
+	   hsla(0,0%,100%,0) 100%),
+	radial-gradient(
+	  ellipse 12% 50% at 50% 100%,
+	  hsla(0,0%,100%,.6) 0,
+	  hsla(0,0%,100%,0) 100%),
+	radial-gradient(
+	  ellipse 50% 7% at 0 50%,
+	  hsla(0,0%,100%,.5) 0,
+	  hsla(0,0%,100%,0) 100%),
+	radial-gradient(
+	  ellipse 50% 5% at 100% 50%,
+	  hsla(0,0%,100%,.5) 0,
+	  hsla(0,0%,100%,0) 100%),
+	repeating-radial-gradient(
+	  100% 100% at 50% 50%,
+	  hsla(0,0%,0%,0) 0%,
+	  hsla(0,0%,0%,0) 7%,
+	  hsla(0,0%,0%,.1) 8.5%),
+	repeating-radial-gradient(
+	  100% 100% at 50% 50%,
+	  hsla(0,0%,100%,0) 0%,
+	  hsla(0,0%,100%,0) 15%,
+	  hsla(0,0%,100%,.1) 18%),
+	repeating-radial-gradient(
+	  100% 100% at 50% 50%,
+	  hsla(0,0%,100%,0) 0%,
+	  hsla(0,0%,100%,0) 3%,
+	  hsla(0,0%,100%,.2) 4%),
+	radial-gradient(
+	  200% 50% at 50% 50%,
+	  hsla(0,0%,90%,1) 5%,
+	  hsla(0,0%,85%,1) 30%,
+	  hsla(0,0%,60%,1) 100%);
+	  transform: rotate(5deg);
+	  transition: left .5s,transform .8s ;
+}
+
+.switch{
+	background:
+	repeating-linear-gradient(
+	45deg,
+	rgba(255,255,255,0.3) 0%,
+	rgba(255,255,255,0.3) 25%,
+	transparent 25%,
+	transparent 50%)
+	center/5px 5px,
+	linear-gradient(
+	90deg,red 50%,black 50%) -3.2em / 200% 100% no-repeat;
+	transition: background-position .5s;
+}
+
+input:checked~.switch{
+	background-position: 2.4em,-0.8em;
+	transition: background-position .5s;
+}
+
+input:checked~.switch::before{
+	left:calc(99% - 1.5em);
+	transition: left .5s;
+}
+
+input:checked~ .text{
+	animation: 
+	neonBlingBling1 .8s ease-in-out both,
+	neonBlingBling 2s .8s ease-in-out infinite alternate,
+	neon-on-color .8s ease-out forwards;
+}
+
+@keyframes neon-on-color{
+	to{color:white}
+}
+
+@keyframes neon-off-color{
+	from{color:white}
+	to{color:orange}
+}
+
+@keyframes neon-off{
+	from{
+		text-shadow:
+		0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #ff5722,
+		0 0 70px #ff5722,
+		0 0 80px #ff5722,
+		0 0 100px #ff5722,
+		0 0 150px #ff5722;
+	}
+	to{
+		text-shadow: none;
+	}
+}
+
+
+
