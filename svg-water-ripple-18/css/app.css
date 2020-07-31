@@ -1,0 +1,30 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: orange;
+	font-size: 100px;
+}
+
+@font-face {
+	font-family: aaa;
+	src: url(aaa.ttf);
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+}
+
+#text {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

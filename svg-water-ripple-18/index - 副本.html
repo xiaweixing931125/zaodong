@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>水波纹</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<svg width='100%' height='100%' viewBox='0,0,1000,1000' preserveAspectRatio="xMidYMid meet">
+				<defs>
+					<filter id="f" filterUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1000">
+						<feImage xlink:href="#ripples" x="0" y="0" width="1000" height="1000" preserveAspectRatio="xMidYMid meet" result="wave" />
+						<feGaussianBlur in="wave" stdDeviation="5" result="gaussWave"/>
+						<feDiffuseLighting in="gaussWave" lighting-color="#aaa"
+						surfaceScale="50" diffuseConstant="0.5" result="lightWave">
+						  <feDistantLight azimuth="-90" elevation="60"/>
+						</feDiffuseLighting>
+						<feImage xlink:href='img/px.jpg' x='0' y='0' width='1000' height='1000' preserveAspectRatio='xMidYMid slice' result='bg'></feImage>
+					<feBlend in="lightWave" in2="bg" mode="multiply" />
+					</filter>
+					<g id='ripples' >
+						<g class="ripple" transform="translate(-200,-200)">
+						<circle id="circle1" cx="0" cy="0" r="4" stroke-width="2" fill="none" stroke="hsla(0,0%,0%,0.6)">
+						  <animate attributeName="stroke"
+						      begin="indefinite" fill="freeze"
+						      from="hsla(0,0%,0%,0.6)"
+						      to="hsla(0,0%,0%,0)"
+						      repeatCount="1" dur="3s"/>
+						  <animate attributeName="r"
+							  id='circle1Anim'
+						      begin="indefinite" fill="freeze"
+						      repeatCount="1" dur="3s"/>
+						</circle>
+						<circle id="circle2" cx="0" cy="0" r="14" stroke-width="2" fill="none" stroke="hsla(0,0%,0%,0.6)">
+						  <animate attributeName="stroke"
+						      begin="indefinite" fill="freeze"
+						      from="hsla(0,0%,0%,0.6)"
+						      to="hsla(0,0%,0%,0)"
+						      repeatCount="1" dur="3s"/>
+						  <animate attributeName="r"
+						  id='circle2Anim'
+						      begin="indefinite" fill="freeze"
+						      repeatCount="1" dur="3s"/>
+						</circle>
+						<circle id="circle3" cx="0" cy="0" r="24" stroke-width="2" fill="none" stroke="hsla(0,0%,0%,0.4)">
+						  <animate attributeName="stroke"
+						      begin="indefinite" fill="freeze"
+						      from="hsla(0,0%,0%,0.4)"
+						      to="hsla(0,0%,0%,0)"
+						      repeatCount="1" dur="3s"/>
+						  <animate attributeName="r"
+						  id='circle3Anim'
+						      begin="indefinite" fill="freeze"
+						      repeatCount="1" dur="3s"/>
+						</circle>
+						<circle id="circle4" cx="0" cy="0" r="34" stroke-width="2" fill="none" stroke="hsla(0,0%,0%,0.2)">
+						  <animate attributeName="stroke"
+						      begin="indefinite" fill="freeze"
+						      from="hsla(0,0%,0%,0.2)"
+						      to="hsla(0,0%,0%,0)"
+						      repeatCount="1" dur="3s"/>
+						  <animate attributeName="r"
+						      begin="indefinite" fill="freeze"
+							  id='circle4Anim'
+						      repeatCount="1" dur="3s"/>
+						</circle>
+					</g>
+					</g>
+				</defs>
+				<g>
+				  <rect x="0" y ="0" width="1000" height="1000" fill="none" filter="url(#f)"/>
+				  <text id="text" x="500" y="300" width="1000" height="1000" style="text-anchor:middle;fill:orange;">strarry</text>
+				</g>
+			</svg>
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/app.js"></script>
+</html>
