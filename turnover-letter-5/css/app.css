@@ -1,0 +1,111 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: #FFE4C4;
+}
+
+html{
+  font-size: 100px;
+  font-family: "Microsoft YaHei",sans-serif;
+}
+
+p{
+  font-size: 1rem;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.box{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translateX(-50%) translateY(-50%);
+}
+
+.anim-text,.nick-text{
+	color:#e3531b;
+	position: relative;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+
+.anim-text:before,.anim-text:after,.nick-text:before,.nick-text:after{
+	content: attr(letter);
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform-origin: left center;
+	transition: all .5s ease-in;
+}
+
+.anim-text:before,.nick-text:before{
+	color: #fff;
+	z-index: 2;
+	transform: rotateY(20deg);
+	text-shadow:1px 1px #888,-1px -1px #eee;
+}
+
+.anim-text:after,.nick-text:after{
+	color: rgba(0,0,0,.2);
+	z-index: 1;
+	filter: blur(1px);
+	transform: scale(1.05,1) skewY(2deg);
+}
+
+.anim-text:hover:before{
+	transition: all .2s ease-out;
+	transform: rotateY(45deg);
+}
+
+.anim-text:hover:after{
+	transition: all .2s ease-out;
+	transform: rotateY(40deg) skewY(20deg) scale(1.2,1);
+}
+
+.nickbox2 .nickname .nick-text:before{
+	transition: all .2s ease-out;
+	transform: rotateY(45deg);
+}
+
+.nickbox2 .nickname .nick-text:after{
+	transition: all .2s ease-out;
+	transform: rotateY(40deg) skewY(20deg) scale(1.2,1);
+}
+
+.nickbox2 .nickname .nick-text:nth-child(1):before,.nickbox2 .nickname .nick-text:nth-child(1):after{
+	transition-delay: 0s;
+}
+
+.nickbox2 .nickname .nick-text:nth-child(2):before,.nickbox2 .nickname .nick-text:nth-child(2):after{
+	transition-delay: 0.15s;
+}
+
+.nickbox2 .nickname .nick-text:nth-child(3):before,.nickbox2 .nickname .nick-text:nth-child(3):after{
+	transition-delay: 0.3s;
+}
+
+.nickbox2 .nickname .nick-text:nth-child(4):before,.nickbox2 .nickname .nick-text:nth-child(4):after{
+	transition-delay: 0.45s;
+}
+
+.nickbox2 .nickname .nick-text:nth-child(5):before,.nickbox2 .nickname .nick-text:nth-child(5):after{
+	transition-delay: 0.6s;
+}
+
+.nickbox2 .nickname .nick-text:nth-child(6):before,.nickbox2 .nickname .nick-text:nth-child(6):after{
+	transition-delay: 0.75s;
+}
+
+.nickbox2 .nickname .nick-text:nth-child(7):before,.nickbox2 .nickname .nick-text:nth-child(7):after{
+	transition-delay: 0.9s;
+}
+
