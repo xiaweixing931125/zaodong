@@ -1,0 +1,243 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div,img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	display: block;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.swiper-wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.swiper-slide{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.box1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.pig{
+	width: 300px;
+}
+
+.control-box{
+	width: 50%;
+	height: 50%;
+	background-color: #17B978;
+	border-radius: 6px;
+	box-shadow: 3px 5px 6px gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.control-item{
+	width: 100%;
+	position: relative;
+}
+
+.item-text{
+	display: inline-block;
+	transform: translateY(-25%);
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.inputName{
+	width: 50%;
+	margin-left: 3%;
+}
+
+.img-group{
+	width: 800px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.imgGroup1,.imgGroup2{
+	width: 300px;
+	height: 290px;
+	position: relative;
+	overflow: hidden;
+}
+
+.text-group{
+	width: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.imgGroup2{
+	width: 300px;
+	height: 300px;
+	background-image: url(../img/time3.jpg),url(../img/bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.rabbit-control{
+	width: 800px;
+	height: 50%;
+	background-color: gray;
+	border-radius: 6px;
+	box-shadow: 3px 5px 6px gray;
+	padding: 8px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.blend-bg{
+	width: 100%;
+}
+
+.rabbit{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.formMode{
+	width: 60%;
+	height: 80%;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+
+.box3{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.block1,.block2{
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.deer1,.deer2{
+	width: 40vh;
+	height:40vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+.deer1:nth-child(1){
+	background-image: url(../img/deer.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.deer1:nth-child(2){
+	background-image: url(../img/deer.jpg),url(../img/deer.jpg);
+	background-position: -1px -1px,1px 1px;
+	background-blend-mode: difference;
+	filter: brightness(2) invert(1) grayscale(1);
+}
+
+.deer1:nth-child(3)::before,.deer1:nth-child(3)::after{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: '';
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.deer1:nth-child(3)::before{
+	background-image: url(../img/deer.jpg),url(../img/deer.jpg);
+	background-position: -1px -1px,1px 1px;
+	background-blend-mode: difference;
+	filter: brightness(2) invert(1) grayscale(1);
+}
+
+.deer1:nth-child(3)::after{
+	background: url(../img/deer.jpg) center/contain no-repeat;
+	mix-blend-mode: color;
+}
+
+.deer2:nth-child(1){
+	background-image: url(../img/deer.jpg),url(../img/deer.jpg);
+	background-position: -1px -1px,1px 1px;
+	background-blend-mode: difference;
+	filter: brightness(2) grayscale(1);
+}
+
+.deer2:nth-child(2){
+	background-image: url(../img/deer.jpg),url(../img/deer.jpg),url(../img/deer.jpg);
+	background-position: -1px -1px,1px 1px,0px 0px;
+	background-blend-mode: color,difference;
+	filter: brightness(2);
+}
+
+.deer2:nth-child(3){
+	background-image: url(../img/deer.jpg),url(../img/deer.jpg),url(../img/deer.jpg);
+	background-position: -1px -1px,1px 1px,0px 0px;
+	background-blend-mode: difference,screen;
+	filter: brightness(2) invert(1) grayscale(1);
+}
+
+.box4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aoteman{
+	width: 40%;
+	height: 80%;
+	background-image: url(../img/time3.gif),url(../img/time3.gif);
+	background-position: -1px -1px,1px 1px;
+	background-blend-mode: difference;
+	filter: brightness(4) grayscale(1);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+}
+

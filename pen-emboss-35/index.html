@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>铅笔粉笔浮雕效果</title>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/app.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide box1">
+						<img src="img/timg.jpg" alt="" class="pig">
+						<div class="control-box">
+							<div class="control-item">
+							<input type="range" name="blur" min="0" max="10" step="0.5" value="0" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text blur">blur(0px)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="grayscale" min="0" max="1" step="0.1" value="0" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text grayscale">grayscale(0)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="sepia" min="0" max="1" step="0.1" value="0" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text sepia">sepia(0)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="brightness" min="0" max="10" step="1" value="1" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text brightness">brightness(1)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="contrast" min="0" max="2" step="0.1" value="1" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text contrast">contrast(1)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="invert" min="0" max="2" step="0.1" value="0" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text invert">invert(0)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="saturate" min="0" max="5" step="0.1" value="1" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text saturate">saturate(1)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="opacity" min="0" max="1" step="0.1" value="1" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text opacity">opacity(1)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="drop-shadow" min="0" max="50" step="1" value="0" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text drop-shadow">drop-shadow(0px 0px 6px gray)</span>
+							</div>
+							<div class="control-item">
+							<input type="range" name="hue-rotate" min="0" max="360" step="1" value="0" class="inputName" onchange="getVal(this.name,this.value)">
+							<span class="item-text hue-rotate">hue-rotate(0deg)</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="swiper-slide box1">
+						<div class="img-group">
+							<div class="imgGroup1">
+								<img src="img/bg.png" alt="" class="blend-bg">
+								<img src="img/time3.jpg" alt="" class="rabbit">
+							</div>
+							<div class="imgGroup2">
+							</div>
+						</div>
+						<div class="text-group">
+							<span>mix-blend-mode</span>
+							<span>background-blend-mode</span>
+						</div>
+						<div class="rabbit-control">
+							<form action="" method="get" class="formMode">
+							选择混合效果<br /><br />
+							<label><input name="mode" type="radio" value="normal" onchange="getMode(this.value)"/>normal</label>
+							<label><input name="mode" type="radio" value="multiply" onchange="getMode(this.value)" />multiply</label>
+							<label><input name="mode" type="radio" value="screen" onchange="getMode(this.value)" />screen</label><br /><br />
+							<label><input name="mode" type="radio" value="overlay" onchange="getMode(this.value)" />overlay</label>
+							<label><input name="mode" type="radio" value="darken" onchange="getMode(this.value)" />darken</label>
+							<label><input name="mode" type="radio" value="color-dodge" onchange="getMode(this.value)" />color-dodge</label><br /><br />
+							<label><input name="mode" type="radio" value="color-burn" onchange="getMode(this.value)" />color-burn</label>
+							<label><input name="mode" type="radio" value="hard-light" onchange="getMode(this.value)" />hard-light</label>
+							<label><input name="mode" type="radio" value="soft-light" onchange="getMode(this.value)" />soft-light</label><br /><br />
+							<label><input name="mode" type="radio" value="difference" onchange="getMode(this.value)" />difference</label>
+							<label><input name="mode" type="radio" value="exclusion" onchange="getMode(this.value)" />exclusion</label>
+							<label><input name="mode" type="radio" value="color" onchange="getMode(this.value)" />color</label><br /><br />
+							<label><input name="mode" type="radio" value="luminosity" onchange="getMode(this.value)" />luminosity</label>
+							</form>
+						</div>
+					</div>
+					<div class="swiper-slide box3">
+						<div class="block1">
+							<div class="deer1"></div>
+							<div class="deer1"></div>
+							<div class="deer1"></div>
+						</div>
+						<div class="block2">
+							<div class="deer2"></div>
+							<div class="deer2"></div>
+							<div class="deer2"></div>
+						</div>
+					</div>
+					<div class="swiper-slide box4">
+						<!-- <img src="img/time3.gif" alt="" class="aoteman"> -->
+						<div class="aoteman"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/app.js"></script>
+</html>
