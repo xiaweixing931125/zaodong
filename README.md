@@ -24,3 +24,5 @@
 # 7月份
 1. [文字翻折-5](https://xiaweixing931125.github.io/zaodong/turnover-letter-5/index.html)
 2. [看鼠标的眼睛-25](https://xiaweixing931125.github.io/zaodong/mouse-eye-25/index.html)
+3. [图片拼接-39](https://xiaweixing931125.github.io/zaodong/image-stitching-39/index.html)
+4. [文本像素动画-47](https://xiaweixing931125.github.io/zaodong/text-canvas-47/index.html)
