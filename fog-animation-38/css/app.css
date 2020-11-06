@@ -1,0 +1,129 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 100px;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.snow-container,.snow-box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+.bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.snow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0.02rem;
+	height: 0.02rem;
+	border-radius: 50%;
+	background-color: white;
+	animation: snowdown 3s infinite;
+}
+
+@keyframes snowdown{
+	to{top: 100%;}
+}
+
+.snowlevel1{
+	width: 0.02rem;
+	height: 0.02rem;
+}
+
+.snowlevel2{
+	width: 0.05rem;
+	height: 0.05rem;
+	box-shadow:0 0 2px white;
+}
+
+.snowlevel3{
+	width: 0.08rem;
+	height: 0.08rem;
+	box-shadow:0 0 4px 2px white;
+}
+
+.snowlevel4{
+	width: 0.11rem;
+	height: 0.11rem;
+	box-shadow:0 0 6px 2px white;
+}
+
+.snowlevel5{
+	width: 0.15rem;
+	height: 0.15rem;
+	box-shadow:0 0 15px 6px white;
+}
+
+/* 雾气 */
+.reat{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: white;
+	filter:blur(15px);
+	mix-blend-mode:lighten;
+	overflow: hidden;
+	opacity: 0.9;
+}
+
+.circle{
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: black;
+	transform: translate(-50%,-50%);
+	animation:blur 2s 1s both ;
+}
+
+.circle.template{
+	visibility: hidden;
+}
+
+@keyframes blur{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+
+.text{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 100vh;
+	font-size: 3rem;
+	color: black;
+	font-family: "arial narrow";
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
