@@ -26,3 +26,10 @@
 2. [看鼠标的眼睛-25](https://xiaweixing931125.github.io/zaodong/mouse-eye-25/index.html)
 3. [图片拼接-39](https://xiaweixing931125.github.io/zaodong/image-stitching-39/index.html)
 4. [文本像素动画-47](https://xiaweixing931125.github.io/zaodong/text-canvas-47/index.html)
+
+
+
+# 8月份
+1. [摩擦动画-38](https://xiaweixing931125.github.io/zaodong/fog-animation-38/index.html)
+2. [canvas绘画基础2-43](https://xiaweixing931125.github.io/zaodong/canvas-43/index.html)
+3. [加载动画-48](https://xiaweixing931125.github.io/zaodong/load-animation-48/index.html)
