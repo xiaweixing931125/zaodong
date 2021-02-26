@@ -33,3 +33,8 @@
 1. [摩擦动画-38](https://xiaweixing931125.github.io/zaodong/fog-animation-38/index.html)
 2. [canvas绘画基础2-43](https://xiaweixing931125.github.io/zaodong/canvas-43/index.html)
 3. [加载动画-48](https://xiaweixing931125.github.io/zaodong/load-animation-48/index.html)
+
+
+# 9月份
+1. [svg渐变-12](https://xiaweixing931125.github.io/zaodong/svg-linearGradient-12/index.html)
+2. [电子钟-29](https://xiaweixing931125.github.io/zaodong/clock-29/index.html)
